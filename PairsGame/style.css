@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.game-name {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
+.card-field {
+  display: flex;
+  max-width: 450px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  max-width: 50px;
+  padding: 45px;
+  font-size: 20px;
+  color: transparent;
+  outline: 1px solid white;
+  border-radius: 8px;
+  background: linear-gradient(#e66465, #9198e5);
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+.card:focus {
+  outline: 1px solid red;
+}
+
+.card:hover {
+  background: linear-gradient(#9198e5,#e66465);
+}
+
+.card:active {
+  outline: 1px solid red;
+}
+
+.open {
+  color: black;
+  background: #cacaca;
+}
+
+.success {
+  color: white;
+  background: lightgreen;
+}
