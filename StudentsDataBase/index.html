@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список студентов</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="formAndSearch">
+        <form class="form" action="#">
+          <h3 class="form__head">Форма для добавления нового студента</h3>
+          <input class="form__input" type="text" id="name-inp" placeholder="Имя">
+          <input class="form__input" type="text" id="surname-inp" placeholder="Фамилия">
+          <input class="form__input" type="text" id="lastname-inp" placeholder="Отчество">
+          <div class="special">
+            <span class="form__descr">Дата рождения</span>
+            <input class="form__input" type="date" id="birthday-inp" placeholder="гг.мм.дд">
+          </div>
+          <input class="form__input" type="number" id="startDay-inp" placeholder="Год начала обучения(2000-2023)">
+          <input class="form__input" type="text" id="faculty-inp" placeholder="Факультет">
+          <span class="form__span">Все поля обязательны для заполнения!</span>
+          <button onclick="addElement()" class="form__btn">Добавить</button>
+        </form>
+        <div class="search">
+          <form class="form" action="" id="filter-form">
+            <h3 class="form__head">Поиск студента</h3>
+            <input class="form__input" type="text" id="form-surname" placeholder="Фамилия">
+            <input class="form__input" type="text" id="form-faculty" placeholder="Факультет">
+            <button class="form__btn" type="submit">Поиск</button>
+          </form>
+          <ul class="ul"></ul>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr class="row">
+            <th class="table__head">
+              <p class="table__text">ФИО студента</p>
+              <button class="sort-btn" onclick="sortStudentsBySurnameMin1()">Сортировать по возрастанию</button>
+              <button class="sort-btn" onclick="sortStudentsBySurnameMax1()">Сортировать по убыванию</button>
+            </th>
+            <th class="table__head">
+              <p class="table__text">Факультет</p>
+              <button class="sort-btn" onclick="sortStudentsByFacultyMin1()">Сортировать по возрастанию</button>
+              <button class="sort-btn" onclick="sortStudentsByFacultyMax1()">Сортировать по убыванию</button>
+            </th>
+            <th class="table__head">
+              <p class="table__text">Дата рождения и возраст</p>
+              <!--<button class="sort-btn">Сортировать по возрастанию</button>
+              <button class="sort-btn">Сортировать по убыванию</button>-->
+            </th>
+            <th class="table__head">
+              <p class="table__text">Годы обучения и номер курса</p>
+              <!--<button class="sort-btn">Сортировать по возрастанию</button>
+              <button class="sort-btn">Сортировать по убыванию</button>-->
+            </th>
+          </tr>
+        </thead>
+        <tbody id="table__body"></tbody>
+      </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+body {
+  background-color: rgba(36, 106, 155, 0.76);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px;
+  gap: 8px;
+  background-color: rgb(50, 161, 161);
+  border-radius: 16px;
+}
+
+.form__head {
+  margin: 0 auto;
+  color: aquamarine;
+}
+
+.form__input {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #cacaca;
+}
+
+.form__input:focus {
+  background-color: white;
+}
+
+.form__input:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+.form__input:active {
+  background-color: white;
+}
+
+.form__span {
+  margin: 0 auto;
+  color: aquamarine;
+}
+
+.form__descr {
+  max-width: 220px;
+  margin-right: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #cacaca;
+}
+
+.form__btn {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #cacaca;
+  border-radius: 8px;
+}
+
+.form__btn:focus {
+  background-color: white;
+}
+
+.form__btn:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+.form__btn:active {
+  background-color: white;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.table__head {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: rgb(15, 135, 247);
+  background-color: white;
+}
+
+.form-tr {
+  padding: 5px 40px;
+  color: rgb(15, 135, 247);
+  background-color: white;
+  outline: 1px solid rgb(15, 135, 247);
+}
+
+.table__text {
+  margin: 0;
+}
+
+.formAndSearch {
+  display: flex;
+  max-width: 700px;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.ul {
+  padding: 0;
+  list-style: none;
+}
+
+.li {
+  padding: 10px;
+  outline: 2px solid lightseagreen;
+  background-color: azure;
+}
