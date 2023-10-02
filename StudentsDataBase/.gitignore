@@ -1,0 +1,11 @@
+.idea
+node_modules
+
+/dist
+
+.qitlab-ci.yml
+.eslintrc.js
+package-lock.json
+package.json
+.vscode
+
