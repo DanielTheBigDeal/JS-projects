@@ -114,3 +114,10 @@ body {
   outline: 2px solid lightseagreen;
   background-color: azure;
 }
+
+.sort-btn {
+  color: aqua;
+  background-color: rgba(36, 106, 155, 0.76);
+  border: none;
+  border-radius: 8px;
+}
